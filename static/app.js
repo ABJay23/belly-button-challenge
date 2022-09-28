@@ -20,6 +20,17 @@ function DrawGauge(sampleId)
     console.log(`DrawGauge(${sampleId})`);
 }
 
+
+function optionChanged(sampleId)
+{
+    console.log(`optionChanged, new value: ${sampleId}`);
+
+    DrawBargraph(sampleId);
+    DrawBubblechart(sampleId);
+    ShowMetadata(sampleId);
+    DrawGauge(sampleId);
+}
+
 function InitDashboard()
 {
     console.log('InitDashboard()');
